@@ -12,7 +12,7 @@ body {
     background: #0F172A;
     color: #E2E8F0;
 }
-h3{color:rgb(167, 47, 47)}
+h3{color:rgb(147, 92, 250)}
 /* Navigation */
 .nav-container {
     display: flex;
@@ -259,3 +259,29 @@ h2 {
 .social-links a:hover {
     color: #E2E8F0;
 }
+.btn{
+    display: inline-block;
+    padding: .01rem .1rem;
+    background-color: rgb(7, 25, 76);
+    border-radius: 10rem;
+    font-size: .8rem;
+    color: #38BDF8;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    border: 2px solid #38BDF8;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #38BDF8;
+    color: black;
+    box-shadow: 0 0 25px #38BDF8;
+    }
+.center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
