@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0F172A;
+    color: #E2E8F0;
+}
+h3{color:rgb(167, 47, 47)}
+/* Navigation */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #1E293B;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #38BDF8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #E2E8F0;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38BDF8;
+}
+
+/* Mobile Menu */
+.menu-icon {
+    font-size: 1.8rem;
+    color: #E2E8F0;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 100%;
+    background: #1E293B;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.dropdown.active {
+    display: flex;
+}
+
+.close-icon {
+    font-size: 1.8rem;
+    color: #E2E8F0;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 50px 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Profile Image */
+.image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #38BDF8;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #38BDF8;
+}
+
+/* Content */
+.content {
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #E2E8F0;
+}
+
+h1 span {
+    color: #38BDF8;
+}
+
+.typewriter {
+    font-size: 1.2rem;
+    color: #38BDF8;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Section Titles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #38BDF8;
+}
+
+/* Projects */
+.projects, .skills, .certifications {
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background: #1E293B;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px #38BDF8;
+}
+
+/* Skills */
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.progress {
+    background: #1E293B;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 10px;
+    background: #38BDF8;
+    border-radius: 5px;
+}
+  /* Certifications */
+  .cert-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #1E293B;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.cert i {
+    font-size: 2rem;
+    color: #38BDF8;
+}
+.cert i :hover {color:#38BDF8;
+}
+.cert i {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.education {
+    text-align: center;
+    margin: 50px auto;}
+
+/* Contact */
+.contact {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contact a {
+    color: #38BDF8;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.8rem;
+    color: #38BDF8;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #E2E8F0;
+}
